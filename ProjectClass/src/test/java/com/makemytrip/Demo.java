@@ -3,6 +3,8 @@ package com.makemytrip;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.time.Duration;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -16,6 +18,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class Demo {
 
 	public static void main(String[] args)throws InterruptedException, AWTException {
@@ -24,8 +27,14 @@ public class Demo {
 		driver.manage().window().maximize();
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://www.medibuddy.in/");
-//	WebDriverWait wait=new WebDriverWait(driver,3);
-	//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[text()='Medicine']/ancestor::*[@href='https://www.medibuddy.in/Medicine/']")));
+		
+		
+		
+/*	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[text()='Medicine']/ancestor::*[@href='https://www.medibuddy.in/Medicine/']")));
+		driver.manage().timeouts().implicitlyWait(null)
+		*/
+		
 		Thread.sleep(5000);
 		WebElement  medicine=driver.findElement(By.xpath("//h1[text()='Medicine']/ancestor::*[@href='https://www.medibuddy.in/Medicine/']"));
 		medicine.click();
@@ -58,6 +67,11 @@ public class Demo {
      Thread.sleep(2000);
      WebElement upload=driver.findElement(By.xpath("//p[.='Upload Prescription']"));
      upload.click();
+     
+     
+ //    upload.sendKeys("G:\\Learning\\Order prescription list.docx");
+ //    File order=new File("G:\\Learning\\Order prescription list.docx");
+     
      
 //     js.executeScript("arguments[0].click()", prescription);
 
