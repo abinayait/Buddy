@@ -159,7 +159,296 @@ public static void failure() {
 	
 */
 }
+/* git commands
+ 
+ 
+delluser@LAPTOP-6N2GONVC MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
 
+delluser@LAPTOP-6N2GONVC MINGW64 ~
+$ cd G:/Learning/Abinaya Git/Medibuddy
+bash: cd: too many arguments
+
+delluser@LAPTOP-6N2GONVC MINGW64 ~
+$ cd "G:/Learning/Abinaya Git/Medibuddy"
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git status
+On branch excel
+Your branch is up to date with 'origin/excel'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    ProjectClass/src/test/java/com/makemytrip/Demo.java -> ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProjectClass/src/main/java/com/ProjectClass/Cricketbuzz.java
+        modified:   ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProjectClass/src/main/java/com/Project/
+        ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ color
+bash: color: command not found
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ color--
+bash: color--: command not found
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ color --help
+bash: color: command not found
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ cd
+
+delluser@LAPTOP-6N2GONVC MINGW64 ~
+$ color --help
+bash: color: command not found
+
+delluser@LAPTOP-6N2GONVC MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+delluser@LAPTOP-6N2GONVC MINGW64 ~
+$ cd "G:/Learning/Abinaya Git/Medibuddy"
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git status
+On branch excel
+Your branch is up to date with 'origin/excel'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    ProjectClass/src/test/java/com/makemytrip/Demo.java -> ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProjectClass/src/main/java/com/ProjectClass/Cricketbuzz.java
+        modified:   ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProjectClass/src/main/java/com/Project/
+        ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git restore
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git restore   ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+error: pathspec 'ProjectClass/src/main/java/com/ProjectClass/Class_A.java' did not match any file(s) known to git
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git restore   ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+error: pathspec 'ProjectClass/src/main/java/com/ProjectClass/Class_A.java' did not match any file(s) known to git
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git restore ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+error: pathspec 'ProjectClass/src/main/java/com/ProjectClass/Class_A.java' did not match any file(s) known to git
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git status
+On branch excel
+Your branch is up to date with 'origin/excel'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    ProjectClass/src/test/java/com/makemytrip/Demo.java -> ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProjectClass/src/main/java/com/ProjectClass/Cricketbuzz.java
+        modified:   ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProjectClass/src/main/java/com/Project/
+        ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git add
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git add ProjectClass/src/main/java/com/ProjectClass/Cricketbuzz.java
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git status
+On branch excel
+Your branch is up to date with 'origin/excel'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ProjectClass/src/main/java/com/ProjectClass/Cricketbuzz.java
+        renamed:    ProjectClass/src/test/java/com/makemytrip/Demo.java -> ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProjectClass/src/main/java/com/Project/
+        ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git status ProjectClass/src/main/java/com/makemytrip/Demo.java
+On branch excel
+Your branch is up to date with 'origin/excel'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git add ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git status
+On branch excel
+Your branch is up to date with 'origin/excel'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ProjectClass/src/main/java/com/ProjectClass/Cricketbuzz.java
+        renamed:    ProjectClass/src/test/java/com/makemytrip/Demo.java -> ProjectClass/src/main/java/com/makemytrip/Demo.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProjectClass/src/main/java/com/Project/
+        ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git commit -m "crickbuzz screenshot"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'delluser@LAPTOP-6N2GONVC.(none)')
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git cofig --global user.name "abinaya"
+git: 'cofig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git config --global user.name "abinaya"
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git commit -m "crickbuzz screenshot"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'delluser@LAPTOP-6N2GONVC.(none)')
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git config --global user.email "abinayavidhya315@gmail.com"
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git config --global user.name "abinaya"
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git commit -m "crickbuzz screenshot"
+[excel 7b23bce] crickbuzz screenshot
+ 2 files changed, 114 insertions(+), 47 deletions(-)
+ rename ProjectClass/src/{test => main}/java/com/makemytrip/Demo.java (91%)
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git push origin excel
+Enter passphrase for key '/c/Users/delluser/.ssh/id_rsa':
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git push origin excel
+Enter passphrase for key '/c/Users/delluser/.ssh/id_rsa':
+Enter passphrase for key '/c/Users/delluser/.ssh/id_rsa':
+Enter passphrase for key '/c/Users/delluser/.ssh/id_rsa':
+Received disconnect from 20.207.73.82 port 22:11: Bye Bye
+Disconnected from 20.207.73.82 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git config --add --local core.sshCommand 'ssh -i C:/Users/delluser/.ssh/id_rsa_abinaya'
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git push origin excel
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (14/14), 3.02 KiB | 619.00 KiB/s, done.
+Total 14 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:abinayait/Buddy.git
+   10081c6..7b23bce  excel -> excel
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$ git status
+On branch excel
+Your branch is up to date with 'origin/excel'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProjectClass/src/main/java/com/Project/
+        ProjectClass/src/main/java/com/ProjectClass/Class_A.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$
+
+delluser@LAPTOP-6N2GONVC MINGW64 /g/Learning/Abinaya Git/Medibuddy (excel)
+$
+
+ 
+ */
 }
 
 	
