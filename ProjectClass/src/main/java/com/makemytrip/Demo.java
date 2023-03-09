@@ -26,10 +26,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Demo {
 static 	WebDriver driver;
-	public static void screensnap() throws IOException {
+	public static void screensnap(String path, WebDriver driver) throws IOException {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src,new File("G:\\Learning\\Abinaya Git\\Medibuddy\\ProjectClass\\target\\failedscreenshot.png"));
+//		FileUtils.copyFile(src,new File("G:\\Learning\\Abinaya Git\\Medibuddy\\ProjectClass\\target\\failedscreenshot.png"));
+		FileUtils.copyFile(src,new File(path+"\\failedscreenshot.png"));
 		}
 public static void main(String [] args) throws InterruptedException, AWTException, IOException {
 	try {
@@ -37,7 +38,8 @@ public static void main(String [] args) throws InterruptedException, AWTExceptio
 	browserlaunch();
 	}
 	catch(Exception e) {
-		screensnap();
+		
+		screensnap("G:\\Learning\\Abinaya Git\\Medibuddy\\ProjectClass\\target",driver);
 		e.printStackTrace();
 		
 	}
